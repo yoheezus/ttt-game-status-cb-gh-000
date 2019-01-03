@@ -81,7 +81,7 @@ def winner(board)
     unless win
         nil
     end
-    elsif board[win[1]] == "X"
+    if board[win[1]] == "X"
         return "X"
     elsif board[win[1]] == "O"
         return "O"
