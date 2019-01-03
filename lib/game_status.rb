@@ -37,8 +37,10 @@ end
 def draw?(board)
     diagonal1 = [0, 4, 8]
     diagonal2 = [2, 4, 6]
-    diag_win1 = diagonal1.each{|i| diag_win1 << board[i]}
-    diag_win1 = diagonal2.each{|i| diag_win2 << board[i]}
+    diag_win1 = []
+    diagonal2 = []
+    diag_win1 << diagonal1.each{|i| board[i]}
+    diag_win1 << diagonal2.each{|i| board[i]}
     if diag_win1.all? == "X" || diag_win1.all? == "O" || diag_win2.all? == "O" || diag_win2.all == "X"
         false
     elsif full?(board) && won?(board) == false
