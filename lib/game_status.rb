@@ -46,7 +46,7 @@ def draw?(board)
         print diag_win1
         return false
     elsif diag_win2.all? == "X" || diag_win2.all? == "O"
-        print diag_win2
+        #print diag_win2
         return false
     end
     if full?(board) && won?(board) == false
