@@ -39,7 +39,7 @@ def draw?(board)
     if full?(board) && won?(board) == false
         true
     elsif diagonal_win?(board)
-        return false
+        false
     else
         nil
     end
