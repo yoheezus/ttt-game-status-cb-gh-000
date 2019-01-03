@@ -31,7 +31,10 @@ def full?(board)
         true
     elsif board.any?{|i| i == " " || i.nil?}
         false
+    else
+        nil
     end
+
 end
 
 def draw?(board)
