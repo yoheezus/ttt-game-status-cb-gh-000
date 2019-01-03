@@ -96,6 +96,7 @@ WIN_COMBINATIONS = [
     [0, 4, 8],
     [2, 4, 6]
 ]
-board = ["X", " ", "X", " ", "X", " ", "O", "O", " "]
+board = ["X", "X", "X", "X", "X", "X", "O", "O", "X"]
 print won?(board)
 print over?(board)
+print(winner(board))
