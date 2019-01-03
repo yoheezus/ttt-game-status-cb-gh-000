@@ -70,6 +70,8 @@ def over?(board)
         true
     elsif full?(board) == false && won?(board).nil?
         false
+    else
+        false
     end
 end
 
