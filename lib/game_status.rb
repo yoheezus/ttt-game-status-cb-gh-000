@@ -39,8 +39,8 @@ def draw?(board)
     diagonal2 = [2, 4, 6]
     diag_win1 = []
     diag_win2 = []
-    diagonal1.each{|i|diag_win1 << board[i]}
-    diag_win2 << diagonal2.each{|i| board[i]}
+    diagonal1.each{|i| diag_win1 << board[i]}
+    diagonal2.each{|i| diag_win2 << board[i]}
     print  diag_win1, diag_win2
     unless diag_win1.all? == "X" || diag_win1.all? == "O" || diag_win2.all? == "O" || diag_win2.all? == "X"
         false
