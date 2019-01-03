@@ -77,6 +77,7 @@ end
 
 def winner(board)
     win = won?(board)
+    print(win)
     if win.nil?
         nil
     elsif win[0] == "X"
