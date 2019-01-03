@@ -60,6 +60,7 @@ def diagonal_win?(board)
     diagonal2.each{|i| diag_win2 << board[i]}
     print diag_win1, diag_win2
 end
+
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
     [0, 1, 2],
@@ -72,4 +73,4 @@ WIN_COMBINATIONS = [
     [2, 4, 6]
 ]
 board = ["X", "O", "O", "X", "X", "X", "X", "X", "X"]
-draw?(board)
+diagonal_win?(board)
