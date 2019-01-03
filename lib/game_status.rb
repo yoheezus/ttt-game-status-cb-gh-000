@@ -62,7 +62,7 @@ def diagonal_win?(board)
     diagonal1.each{|i| diag_win1 << board[i]}
     diagonal2.each{|i| diag_win2 << board[i]}
     print diag_win1
-    if diag_win1.all? == "X" || diag_win1.all? == "O"
+    if diag_win1.all?{|i| i == "X"} || diag_win1.all? == "O"
         print diag_win1
         return false
     elsif diag_win2.all? == "X" || diag_win2.all? == "O"
