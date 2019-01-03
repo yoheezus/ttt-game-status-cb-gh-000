@@ -35,8 +35,13 @@ def full?(board)
 end
 
 def draw?(board)
+    diagonal1 = [0, 4, 8]
+    diagonal2 = [2, 4, 6]
+    diag_win1 = diagonal1.each{|i| diag_win1 << board[i]}
+    diag_win1 = diagonal2.each{|i| diag_win2 << board[i]}
     if full?(board) && won?(board) == false
         true
+    elsif
     end
 end
 # Define your WIN_COMBINATIONS constant
