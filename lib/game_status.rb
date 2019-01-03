@@ -50,6 +50,15 @@ def draw?(board)
         true
     end
 end
+
+def diagonal_win?(board)
+    diagonal1 = [0, 4, 8]
+    diagonal2 = [2, 4, 6]
+    diag_win1 = []
+    diag_win2 = []
+    diagonal1.each{|i| diag_win1 << board[i]}
+    diagonal2.each{|i| diag_win2 << board[i]}
+end
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
     [0, 1, 2],
