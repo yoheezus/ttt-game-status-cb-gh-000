@@ -61,4 +61,4 @@ WIN_COMBINATIONS = [
     [2, 4, 6]
 ]
 board = ["X", "O", "O", "X", "X", "X", "X", "X", "X"]
-won?(board)
+draw?(board)
