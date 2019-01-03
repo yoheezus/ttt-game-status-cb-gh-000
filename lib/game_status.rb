@@ -86,5 +86,5 @@ WIN_COMBINATIONS = [
     [0, 4, 8],
     [2, 4, 6]
 ]
-board = ["X", "X", "X", "O", "X", "O", "X", "O", "O"]
+board = ["X", " ", "X", " ", "X", " ", "O", "O", " "]
 print !!won?(board)
