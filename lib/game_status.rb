@@ -77,7 +77,7 @@ end
 
 def winner(board)
     win = won?(board)
-    print(win)
+    print(win[2])
 
 end
 # Define your WIN_COMBINATIONS constant
