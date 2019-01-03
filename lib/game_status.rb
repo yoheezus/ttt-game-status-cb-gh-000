@@ -8,7 +8,7 @@ def won?(board)
     WIN_COMBINATIONS.each do |condi|
         winning_combi = []
         condi.each do |i|
-            winning_combi << i
+            winning_combi << board[i]
             print(winning_combi)
         end
         if winning_combi.all?{|i| i == "X"}
