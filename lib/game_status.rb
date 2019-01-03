@@ -88,3 +88,4 @@ WIN_COMBINATIONS = [
 ]
 board = ["X", " ", "X", " ", "X", " ", "O", "O", " "]
 print won?(board)
+print over?(board)
