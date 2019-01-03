@@ -58,6 +58,7 @@ def diagonal_win?(board)
     diag_win2 = []
     diagonal1.each{|i| diag_win1 << board[i]}
     diagonal2.each{|i| diag_win2 << board[i]}
+    print diag_win1, diag_win2
 end
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
