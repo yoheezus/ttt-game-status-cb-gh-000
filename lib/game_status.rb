@@ -38,7 +38,7 @@ def draw?(board)
     diagonal1 = [0, 4, 8]
     diagonal2 = [2, 4, 6]
     diag_win1 = []
-    diagonal2 = []
+    diag_win2 = []
     diag_win1 << diagonal1.each{|i| board[i]}
     diag_win2 << diagonal2.each{|i| board[i]}
     print  diag_win1, diag_win2
