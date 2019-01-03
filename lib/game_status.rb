@@ -46,7 +46,7 @@ def draw?(board)
         print diag_win1
         return false
     elsif diag_win2.all? == "X" || diag_win2.all? == "O"
-        #print diag_win2
+        print diag_win2
         return false
     end
     if full?(board) && won?(board) == false
@@ -61,7 +61,14 @@ def diagonal_win?(board)
     diag_win2 = []
     diagonal1.each{|i| diag_win1 << board[i]}
     diagonal2.each{|i| diag_win2 << board[i]}
-    print diag_win1, diag_win2
+    
+    if diag_win1.all? == "X" || diag_win1.all? == "O"
+        print diag_win1
+        return false
+    elsif diag_win2.all? == "X" || diag_win2.all? == "O"
+        print diag_win2
+        return false
+    end
 end
 
 # Define your WIN_COMBINATIONS constant
