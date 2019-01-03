@@ -4,8 +4,11 @@ def position_taken?(board, index)
 end
 
 def won?(board)
+    
     unless board.all?{|i| == " "}
         false
+    end
+    
     WIN_COMBINATIONS.each do |condi|
         winning_combi = []
         condi.each do |i|
