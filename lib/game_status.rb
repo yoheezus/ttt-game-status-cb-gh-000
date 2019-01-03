@@ -77,10 +77,11 @@ end
 
 def winner(board)
     win = won?(board)
+    index = win[1]
     print(win)
-    if board[win[1]] == "X"
+    if board[index] == "X"
         return "X"
-    elsif board[win[1]] == "O"
+    elsif board[index] == "O"
         return "O"
     end
 end
