@@ -6,7 +6,7 @@ end
 def won?(board)
 
     if board.all?{|i| i == " "}
-        false
+        return false
     end
 
     WIN_COMBINATIONS.each do |condi|
