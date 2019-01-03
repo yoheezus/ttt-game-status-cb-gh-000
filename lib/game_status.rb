@@ -29,7 +29,7 @@ end
 def full?(board)
     if board.all?{|i| i == "X" || i == "O"}
         true
-    elsif board.any?{|i| i == " " || i.nil?}
+    elsif board.any?{|i| i == " " || i == nil}
         false
     else
         nil
@@ -68,7 +68,7 @@ def over?(board)
         true
     elsif draw?(board)
         true
-    elsif full?(board) == false && won?(board) == nil
+    elsif full?(board) && won?(board) == nil
         false
     end
 end
