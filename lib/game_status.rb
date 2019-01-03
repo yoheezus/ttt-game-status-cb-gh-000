@@ -61,7 +61,11 @@ def diagonal_win?(board)
 end
 
 def over?(board)
-    
+    if draw?(board)
+        true
+    elsif won?(board)
+        true
+    elsif full?(board) == false && won?(board) == false
 end
 
 # Define your WIN_COMBINATIONS constant
