@@ -84,4 +84,4 @@ WIN_COMBINATIONS = [
     [2, 4, 6]
 ]
 board = ["O", "O", "X", "O", "X", "O", "X", "O", "O"]
-print diagonal_win?(board)
+print won?(board)
