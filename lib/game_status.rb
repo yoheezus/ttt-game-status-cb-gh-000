@@ -35,7 +35,7 @@ def full?(board)
 end
 
 def draw?(board)
-    if diagonal_win?
+    if diagonal_win? == true
         false
     elsif full?(board) && won?(board) == false
         true
