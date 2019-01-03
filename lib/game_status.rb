@@ -62,7 +62,7 @@ def diagonal_win?(board)
 end
 
 def over?(board)
-    if !!won?(board) && full?(board)
+    if !!won?(board) == true && full?(board)
         return true
     elsif !!won?(board)
         true
