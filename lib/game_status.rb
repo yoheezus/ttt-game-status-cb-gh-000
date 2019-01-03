@@ -42,12 +42,12 @@ def draw?(board)
     diagonal1.each{|i| diag_win1 << board[i]}
     diagonal2.each{|i| diag_win2 << board[i]}
 
-    if diag_win1.all? == "X" || diag_win1.all? == "O" || diag_win2.all? == "O" || diag_win2.all? == "X"
-        print diag_win1, diag_win2
+    if diag_win1.all? == "X" || diag_win1.all? == "O"
+        print diag_win1
         return false
     elsif diag_win2 == "X" || diag_win2.all? == "O"
-        print(diag_win2)
-        return false 
+        print diag_win2
+        return false
     end
     if full?(board) && won?(board) == false
         true
