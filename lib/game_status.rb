@@ -79,9 +79,9 @@ def winner(board)
     if win.nil?
         nil
     elsif win[1] == "X"
-        "X"
+        return "X"
     elsif win[1] == "O"
-        "O"
+        return "O"
     end
 end
 # Define your WIN_COMBINATIONS constant
