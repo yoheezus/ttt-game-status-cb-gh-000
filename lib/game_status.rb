@@ -34,6 +34,9 @@ def full?(board)
     end
 end
 
+def draw?(board)
+    if full?(board) && won?(board) == false
+end
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
     [0, 1, 2],
@@ -45,5 +48,5 @@ WIN_COMBINATIONS = [
     [0, 4, 8],
     [2, 4, 6]
 ]
-board = ["X", "X", "X", "X", "X", "X", "X", "X", "X"]
+board = ["X", "O", "O", "X", "X", "X", "X", "X", "X"]
 won?(board)
