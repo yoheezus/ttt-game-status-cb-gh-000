@@ -76,14 +76,7 @@ def over?(board)
 end
 
 def winner(board)
-    win = won?(board)
-    index = win[1]
-    print(win)
-    if board[index] == "X"
-        return "X"
-    elsif board[index] == "O"
-        return "O"
-    end
+
 end
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
