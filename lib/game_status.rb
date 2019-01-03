@@ -78,7 +78,7 @@ end
 def winner(board)
     win = won?(board)
     print(win)
-    
+
 end
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
@@ -91,7 +91,7 @@ WIN_COMBINATIONS = [
     [0, 4, 8],
     [2, 4, 6]
 ]
-board = ["X", "O", "X", "X", "X", "X", "O", "O", "X"]
+board = ["X", "X", "X", "X", "X", "X", "O", "O", "X"]
 print won?(board)
 print over?(board)
 print winner(board)
