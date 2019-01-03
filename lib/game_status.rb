@@ -64,9 +64,7 @@ def diagonal_win?(board)
 
     if diag_win1.all?{|i| i == "X"} || diag_win1.all?{|i| i == "O"}
         print diag_win1
-        return true
     elsif diag_win2.all?{|i| i == "X"} || diag_win2.all?{|i| i == "O"}
-        print diag_win2
         return true
     end
 end
