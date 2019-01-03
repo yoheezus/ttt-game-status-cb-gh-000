@@ -17,6 +17,9 @@ def won?(board)
         end
     end
 end
+
+def full?(board)
+    if board.all?{|i| i == "X" || i == "O"}
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
     [0, 1, 2],
