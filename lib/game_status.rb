@@ -23,6 +23,8 @@ def won?(board)
         elsif winning_combi.all?{|i| i != "X" || i != "O"} && full?(board)
             return false
         end
+    else
+        nil
     end
 end
 
