@@ -78,13 +78,7 @@ end
 def winner(board)
     win = won?(board)
     print(win)
-    if win.nil?
-        nil
-    elsif win[0] == "X"
-        return "X"
-    elsif win[0] == "O"
-        return "O"
-    end
+    
 end
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
