@@ -75,7 +75,7 @@ def over?(board)
 end
 
 def winner(board)
-    win = win?(board)
+    win = won?(board)
     if win.nil?
         nil
     elsif win[1] == "X"
