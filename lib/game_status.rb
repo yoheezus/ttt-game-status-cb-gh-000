@@ -5,7 +5,7 @@ end
 
 def won?(board)
 
-    unless board.all?{|i| == " "}
+    unless board.all?{|i| i == " "}
         false
     end
 
