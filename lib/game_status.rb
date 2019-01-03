@@ -10,7 +10,12 @@ def won?(board)
         condi.each do |i|
             winning_combi << i
         end
+        if winning_combi.all?{|i| i == "X"}
+            return condi
+        elsif winning_combi.all?{|i| i == "O"}
+            return condi
         end
+    end
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
     [0, 1, 2],
