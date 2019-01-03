@@ -74,6 +74,14 @@ def over?(board)
     end
 end
 
+def winner(board)
+    win = win?(board)
+    if win.nil?
+        nil
+    elsif win[1] == "X"
+        "X"
+    elsif win[1] == "O"
+    end
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
     [0, 1, 2],
