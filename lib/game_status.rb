@@ -22,8 +22,7 @@ def won?(board)
             break
         elsif winning_combi.all?{|i| i != "X" || i != "O"} && full?(board)
             return false
-        else
-            nil
+
         end
     end
 end
@@ -71,8 +70,6 @@ def over?(board)
     elsif draw?(board)
         true
     elsif full?(board) == false && won?(board).nil?
-        false
-    else
         false
     end
 end
