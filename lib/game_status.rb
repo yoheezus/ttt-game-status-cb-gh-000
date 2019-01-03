@@ -83,4 +83,4 @@ WIN_COMBINATIONS = [
     [2, 4, 6]
 ]
 board = ["X", "O", "O", "O", "X", "O", "O", "O", "X"]
-diagonal_win?(board)
+print diagonal_win?(board)
