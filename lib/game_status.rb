@@ -29,7 +29,7 @@ end
 def full?(board)
     if board.all?{|i| i == "X" || i == "O"}
         true
-    else
+    elsif board.any?{|i| i == " "}
         false
     end
 
