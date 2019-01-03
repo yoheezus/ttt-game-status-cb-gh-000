@@ -80,7 +80,7 @@ def winner(board)
     print(win)
     if win.nil?
         nil
-    elsif win[0] == "X"
+    elsif board[win[1]] == "X"
         return "X"
     elsif board[win[1]] == "O"
         return "O"
