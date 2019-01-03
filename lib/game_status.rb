@@ -66,6 +66,7 @@ def over?(board)
     elsif won?(board)
         true
     elsif full?(board) == false && won?(board) == false
+        false
 end
 
 # Define your WIN_COMBINATIONS constant
