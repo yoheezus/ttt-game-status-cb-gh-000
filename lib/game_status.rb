@@ -81,6 +81,7 @@ def winner(board)
     elsif win[1] == "X"
         "X"
     elsif win[1] == "O"
+        "O"
     end
 end
 # Define your WIN_COMBINATIONS constant
