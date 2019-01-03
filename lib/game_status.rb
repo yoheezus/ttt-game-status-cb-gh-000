@@ -78,9 +78,6 @@ end
 def winner(board)
     win = won?(board)
     print(win)
-    unless win
-        nil
-    end
     if board[win[1]] == "X"
         return "X"
     elsif board[win[1]] == "O"
