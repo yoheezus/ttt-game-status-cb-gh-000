@@ -16,8 +16,10 @@ def won?(board)
         end
         if winning_combi.all?{|i| i == "X"}
             return condi
+            break
         elsif winning_combi.all?{|i| i == "O"}
             return condi
+            break
         end
     end
 end
