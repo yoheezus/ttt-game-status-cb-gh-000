@@ -32,12 +32,13 @@ def full?(board)
     else
         false
     end
+        false
 end
 
 def draw?(board)
     if full?(board) && won?(board) == false
         true
-    elsif diagonal_win?(board) == true
+    elsif diagonal_win?(board)
         return false
     end
 end
