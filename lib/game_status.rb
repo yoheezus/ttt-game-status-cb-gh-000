@@ -79,9 +79,9 @@ def winner(board)
     win = won?(board)
     if win.nil?
         nil
-    elsif win[1] == "X"
+    elsif win[0] == "X"
         return "X"
-    elsif win[1] == "O"
+    elsif win[0] == "O"
         return "O"
     end
 end
