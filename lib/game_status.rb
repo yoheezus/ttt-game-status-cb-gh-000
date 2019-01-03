@@ -77,8 +77,14 @@ end
 
 def winner(board)
     win = won?(board)
-    print(win[2])
-
+    print(win)
+    if win.nil?
+        nil
+    elsif win[0] == "X"
+        return "X"
+    elsif board[win[1]] == "O"
+        return "O"
+    end
 end
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
@@ -91,7 +97,7 @@ WIN_COMBINATIONS = [
     [0, 4, 8],
     [2, 4, 6]
 ]
-board = ["X", "X", "X", "X", "X", "X", "O", "O", "X"]
+board = ["X", "O", "X", "X", "X", "X", "O", "O", "X"]
 print won?(board)
 print over?(board)
 print winner(board)
