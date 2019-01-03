@@ -9,6 +9,7 @@ def won?(board)
         winning_combi = []
         condi.each do |i|
             winning_combi << i
+            print(winning_combi)
         end
         if winning_combi.all?{|i| i == "X"}
             return condi
