@@ -84,4 +84,4 @@ WIN_COMBINATIONS = [
     [2, 4, 6]
 ]
 board = ["X", "X", "X", "O", "X", "O", "X", "O", "O"]
-print won?(board) == true
+print won?(board) == false
