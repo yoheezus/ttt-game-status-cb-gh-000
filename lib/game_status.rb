@@ -16,6 +16,7 @@ def won?(board)
             return condi
         end
     end
+end
 # Define your WIN_COMBINATIONS constant
 WIN_COMBINATIONS = [
     [0, 1, 2],
