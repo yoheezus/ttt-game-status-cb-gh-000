@@ -45,7 +45,7 @@ def draw?(board)
     if diag_win1.all? == "X" || diag_win1.all? == "O"
         print diag_win1
         return false
-    elsif diag_win2 == "X" || diag_win2.all? == "O"
+    elsif diag_win2.all? == "X" || diag_win2.all? == "O"
         print diag_win2
         return false
     end
