@@ -68,7 +68,7 @@ def over?(board)
         true
     elsif draw?(board)
         true
-    elsif !(full?(board)) && won?(board) == nil
+    elsif full?(board) == false && won?(board).nil?
         false
     end
 end
